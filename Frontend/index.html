@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frappucino Bond Dashboard</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; padding: 40px; background: #1a1a1a; color: white; }
+        .card { background: #2d2d2d; padding: 30px; border-radius: 12px; max-width: 450px; margin: auto; border: 1px solid #444; }
+        .balance-box { background: #111; padding: 15px; border-radius: 8px; font-size: 28px; text-align: center; margin: 20px 0; border: 1px dashed #6c5ce7; }
+        button { width: 100%; background: #6c5ce7; color: white; border: none; padding: 12px; border-radius: 6px; cursor: pointer; font-size: 16px; margin-bottom: 10px; transition: 0.3s; }
+        button:hover { background: #a29bfe; }
+        button:disabled { background: #444; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Frappucino Bonds</h2>
+    <p>Locked ERC-3475 Receipt</p>
+    
+    <button id="connectBtn">Connect MetaMask</button>
+    
+    <div class="balance-box" id="balanceDisplay">
+        ••••••
+    </div>
+    
+    <button id="decryptBtn" disabled>Reveal Private Balance</button>
+</div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
